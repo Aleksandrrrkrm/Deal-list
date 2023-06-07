@@ -46,7 +46,7 @@ final class Server {
         
         if j == dealsCountInPacket || i == dealsCount {
           j = 0
-          let delay = UInt32.random(in: 0...300_000)
+          let delay = UInt32.random(in: 0...3)//300_000)
           usleep(delay)
           let newDeals = deals
           DispatchQueue.main.async {
@@ -60,7 +60,7 @@ final class Server {
   }
 }
 
-struct Deal {
+struct Deal: Equatable {
   let id: Int64
   let dateModifier: Date
   let instrumentName: String
