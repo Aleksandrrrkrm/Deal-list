@@ -66,20 +66,100 @@
 		151E70552940D970000F9ED0 /* TemplateOfDealsViewer */ = {
 			isa = PBXGroup;
 			children = (
-				151E70562940D970000F9ED0 /* AppDelegate.swift */,
-				151E70582940D970000F9ED0 /* SceneDelegate.swift */,
-				151E705A2940D970000F9ED0 /* ViewController.swift */,
-				151E705C2940D970000F9ED0 /* Main.storyboard */,
-				151E705F2940D971000F9ED0 /* Assets.xcassets */,
-				151E70612940D971000F9ED0 /* LaunchScreen.storyboard */,
+				C27F308D2A308FE600D22116 /* Scenes */,
+				C27F30952A3090A600D22116 /* Services */,
+				C27F30942A30907900D22116 /* Resources */,
+				C27F30922A30903D00D22116 /* Application */,
 				151E70642940D971000F9ED0 /* Info.plist */,
-				151E706A2940D98C000F9ED0 /* Server.swift */,
-				151E706C2941F990000F9ED0 /* DealCell.xib */,
-				151E706E2941FC75000F9ED0 /* DealCell.swift */,
-				155E2E072942CF470094E5DA /* HeaderCell.swift */,
-				155E2E062942CF470094E5DA /* HeaderCell.xib */,
 			);
 			path = TemplateOfDealsViewer;
+			sourceTree = "<group>";
+		};
+		C27F308D2A308FE600D22116 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C27F30932A30905A00D22116 /* LaunchScreen */,
+				C27F308E2A308FF900D22116 /* DealsScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C27F308E2A308FF900D22116 /* DealsScene */ = {
+			isa = PBXGroup;
+			children = (
+				151E705A2940D970000F9ED0 /* ViewController.swift */,
+				151E705C2940D970000F9ED0 /* Main.storyboard */,
+				C27F308F2A30900A00D22116 /* Cells */,
+			);
+			path = DealsScene;
+			sourceTree = "<group>";
+		};
+		C27F308F2A30900A00D22116 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C27F30912A30902200D22116 /* HeaderCell */,
+				C27F30902A30901900D22116 /* DealCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C27F30902A30901900D22116 /* DealCell */ = {
+			isa = PBXGroup;
+			children = (
+				151E706C2941F990000F9ED0 /* DealCell.xib */,
+				151E706E2941FC75000F9ED0 /* DealCell.swift */,
+			);
+			path = DealCell;
+			sourceTree = "<group>";
+		};
+		C27F30912A30902200D22116 /* HeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				155E2E062942CF470094E5DA /* HeaderCell.xib */,
+				155E2E072942CF470094E5DA /* HeaderCell.swift */,
+			);
+			path = HeaderCell;
+			sourceTree = "<group>";
+		};
+		C27F30922A30903D00D22116 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				151E70562940D970000F9ED0 /* AppDelegate.swift */,
+				151E70582940D970000F9ED0 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C27F30932A30905A00D22116 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				151E70612940D971000F9ED0 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		C27F30942A30907900D22116 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				151E705F2940D971000F9ED0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C27F30952A3090A600D22116 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C27F30962A3090C400D22116 /* GenerateDealsService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C27F30962A3090C400D22116 /* GenerateDealsService */ = {
+			isa = PBXGroup;
+			children = (
+				151E706A2940D98C000F9ED0 /* Server.swift */,
+			);
+			path = GenerateDealsService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
